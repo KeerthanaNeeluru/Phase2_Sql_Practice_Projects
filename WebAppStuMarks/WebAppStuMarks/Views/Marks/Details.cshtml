@@ -1,0 +1,42 @@
+﻿@model WebAppStuMarks.Models.Mark
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Mark</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SubName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SubName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Marks)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Marks)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
